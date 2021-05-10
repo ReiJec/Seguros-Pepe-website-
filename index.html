@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seguros Pepe</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Nav bar -->
+    <div class="navbar">
+      <div class="container flex">
+        <h1 class="logo">Seguros Pepe</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Cotiza</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Showcase -->
+    <section class="showcase">
+      <div class="container grid">
+        <div class="showcase-text">
+          <h1>Cotiza en minutos</h1>
+          <p>
+            Elige la cobertura
+          que mejor se adapte a tus necesidades. Llena el
+            formulario y nos ponemos en contacto contigo.
+          </p>
+          <a href="#" class="btn btn-outline">Saber Mas</a>
+        </div>
+        <div class="showcase-form card">
+          <h2>Solicitar informacion</h2>
+          <!-- form -->
+          <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
+            <p class="hidden">
+              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+            </p>
+            <div class="form-control">
+              <input type="text" name="name" placeholder="Nombre" required />
+            </div>
+            <div class="form-control">
+              <input
+                type="text"
+                name="company"
+                placeholder="Nombre de la compañia"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <input type="text" name="email" placeholder="Email" required />
+            </div>
+            <input type="submit" value="Enviar" class="btn btn-primary" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Stats -->
+    <section class="stats">
+      <div class="container">
+        <div class="container grid  text-center">
+          <h2>¿Sabias que?</h2>
+          <h2>Por accidentes</h2>
+          <i class="fas fa-car-crash fa-3x"></i>
+          <i class="fas fa-truck fa-3x"></i>
+          <p>
+            México ocupa el séptimo lugar a nivel mundial y el tercero en la
+            región de Latinoamérica en muertes por siniestros viales.<br>
+            <br>Asegura tu vida hoy.</br>
+          </p>
+          <p>
+            Al año mueren más de 44 mil personas en accidentes de tránsito, 
+            mientras que 110 mil resultan lesionadas por la misma causa.<br>
+            <br>¡Es momento de protegerte!</br>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Fraces -->
+    <section class="cloud bg-primary my-2 py-2">
+      <div class="container grid">
+        <div class="text-center">
+          <h2 class="lg">Todos creemos no necesitarlo</h2>
+          <p class="lead my-1">
+            ¡Hasta que los accidentes suceden!
+          </p>
+          <a href="features.html" class="btn btn-dark">Cotiza</a>
+        </div>
+        <img src="recursos/drink-driving-808790_960_720.jpg" />
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+      <div class="container grid grid-3">
+        <div>
+          <h1>Seguros Pepe</h1>
+          <p>Copyright &copy; 2021</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>  
+            <li><a href="#">Cotiza</a></li>
+          </ul>
+        </nav>
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
